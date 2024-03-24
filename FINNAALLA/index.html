@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRAFT TON ANIMAL</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pca4wvp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100&display=swap"
+    rel="stylesheet">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <!-- Barre de navigation fixe -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#section1"><img id="monLogo" src="images/logo.png" alt="Votre Logo"></a>
+    </div>
+    <div class="separator"></div>
+    <ul>
+      <li><a href="#about">À PROPOS</a></li>
+    </ul>
+  </header>
+
+  
+  <section class="top">
+    <div >
+      <p id="Titre">Bienvenue sur <span>Craft ton animal</span><br>
+        le site ludique<br>
+        pour apprendre des choses sur les animaux<br>
+        avec tes amis.
+      </p>
+    </div>
+    <video autoplay muted loop id="myVideo">
+
+      <source src="images/compo.mp4" type="video/mp4" </video>
+
+  </section>
+
+
+
+
+  <div class="police">
+    <section id="section1" class="section1">
+      <div class="fleche-bas">
+        <a href="#section2"><img id="fleche_bas" src="images/button fleche-bas.png" alt="Votre Logo"></a>
+      </div>
+    </section>
+
+    <section id="section2" class="section2">
+      <div class="fleche-haut">
+        <a href="#section1"><img id="fleche_haut" src="images/button fleche-haut.png" alt="Votre Logo"></a>
+      </div>
+      <div class="fleche-bas">
+        <a href="#myCanvas"><img id="fleche_bas" src="images/button fleche-bas.png" alt="Votre Logo"></a>
+      </div>
+    </section>
+
+    <main id="myCanvas">
+      <div class="fleche-haut">
+        <a href="#section2"><img id="fleche_haut" src="images/button fleche-haut.png" alt="Votre Logo"></a>
+      </div>
+      <div class="fleche-bas">
+        <a href="#section4"><img id="fleche_bas" src="images/button fleche-bas.png" alt="Votre Logo"></a>
+      </div>
+    </main>
+    <button class="button" onclick="changeImage()">Générer un sujet</button>
+
+
+    <section id="section4" class="section4">
+      <div class="fleche-haut">
+        <a href="#myCanvas"><img id="fleche_haut" src="images/button fleche-haut.png" alt="Votre Logo"></a>
+      </div>
+      <div class="fleche-bas">
+        <a href="#section5"><img id="fleche_bas" src="images/button fleche-bas.png" alt="Votre Logo"></a>
+      </div>Section 4
+    </section>
+
+    <section id="section5" class="section5">
+      <a href="mafiche.html" target="_blank"><img id="transp"src="images/Fichee.png"></a>
+      <div class="fleche-haut">
+        <a href="#section4"><img id="fleche_haut" src="images/button fleche-haut.png" alt="Votre Logo"></a>
+      </div>
+    </section>
+
+
+
+  </div>
+  <section id="about" class="section7">
+    <div class="content">
+      <div class="text">
+        <b>À Propos</b>
+        <p>Nous sommes 5 étudiants à l'ICAN dans la filière Web & Communication Visuelle.<br>
+          Nous avons dû réaliser un site web contenant du génératif avec pour thémathique l'animalité.<br>
+          Pour répondre à cette consigne nous avons dévellopé Craft Ton Animal qui serait un support<br> pédagogique destiné aux 8-12 ans.
+          Ce service permet la génération de fiches de connaissances <br>
+          sur les différentes espèces animales et la création d'un cadavre exquis représentant un groupe d'animaux.<br></p>
+      </div>
+      <div class="images">
+        <div class="image-animaux">
+          <img class="jaguar1" src="images/jaguar1.png" alt="jaguar1">
+          <img class="sanglier2" src="images/sanglier2.png" alt="sanglier2">
+          <img class="raton3" src="images/raton3.png" alt="raton3">
+          <img class="loup4" src="images/loup4.png" alt="loup4">
+          <img class="fennec5" src="images/fennec5.png" alt="fennec5">
+        </div>
+        <div class="image-group">
+          <img class="eleve1" src="images/eleve1.png" alt="eleve1">
+          <img class="eleve1" src="images/eleve2.png" alt="eleve2">
+          <img class="eleve1" src="images/eleve3.png" alt="eleve3">
+          <img class="eleve1" src="images/eleve4.png" alt="eleve4">
+          <img class="eleve1" src="images/eleve5.png" alt="eleve5">
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+
+
+    <script src="sketch.js"></script>
+
+</html>

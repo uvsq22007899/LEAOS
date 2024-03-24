@@ -1,0 +1,9 @@
+img{
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+
+body{
+    background-image: url("images/Fichier\ 1.png");
+}
